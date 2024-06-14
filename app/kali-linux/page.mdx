@@ -1,0 +1,49 @@
+# How to setup a Kali Linux in Visual Studio Code
+
+## Introduction
+
+Kali Linux is a popular Linux distribution that is widely used by security professionals and hackers for penetration testing and ethical hacking. It comes with a wide range of tools and utilities that are designed to help you test the security of your systems and networks.
+
+In this guide, we will show you how to set up a Kali Linux environment in Visual Studio Code. This will allow you to run Kali Linux in a containerized environment on your local machine, without the need to install it directly on your system.
+
+## Prerequisites
+
+Before you begin, you will need to have the following:
+
+- Visual Studio Code installed on your system.
+- Docker Desktop installed on your system.
+
+## Setting up Kali Linux in Visual Studio Code
+
+To set up Kali Linux in Visual Studio Code, follow these steps:
+
+1. Open Visual Studio Code on your system, and create a new folder for your Kali Linux environment.
+
+2. Click on the Extensions icon in the sidebar, or press `Ctrl+Shift+X` to open the Extensions view.
+
+3. Search for the "Dev Containers" extension and install it.
+
+4. Create a file in the root of your folder named `.devcontainer.json` and add the following configuration:
+
+```json
+{
+    "image": "kalilinux/kali-rolling"
+}∏
+```
+
+5. Press `Ctrl+Shift+P` and select "Dev Containers: Reopen in Container".
+
+6. Visual Studio Code will now build the Kali Linux container and open a new terminal window inside it.
+
+## Conclusion
+
+You have now successfully set up a Kali Linux environment in Visual Studio Code. You can now use this environment to run Kali Linux tools and utilities directly from Visual Studio Code, without the need to install Kali Linux on your system. Happy hacking!
+
+## References
+
+- [Kali Linux Official Website](https://www.kali.org/)
+- [Visual Studio Code Official Website](https://code.visualstudio.com/)
+- [Docker Desktop Official Website](https://www.docker.com/products/docker-desktop)
+- [Dev Containers Extension for Visual Studio Code](https://code.visualstudio.com/docs/remote/containers)
+- [Kali Linux Docker Image on Docker Hub](https://hub.docker.com/r/kalilinux/kali-rolling)
+
